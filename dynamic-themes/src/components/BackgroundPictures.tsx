@@ -1,10 +1,26 @@
 import React from "react";
+type BackgroundPicturesProps = {
+  theme: string;
+};
+export const BackgroundPictures = (props: BackgroundPicturesProps) => {
 
-export default function BackgroundPictures() {
+ 
   return (
-    <div>
-      <div className="upperPic"></div>
-      <div className="lowerPic"></div>
-    </div>
+    <>
+      {/* <div className={`upperPic ${props.theme}upperPic`}>
+      </div>
+      <div className={`lowerPic ${props.theme}lowerPic`}></div> */}
+
+<div className = {`upperPic ${props.theme}upperPic `}>
+      <div className = {`lowerPic ${props.theme}lowerPic`}>
+
+      </div>
+      </div>
+    </>
   );
-}
+};
+
+
+
+
+

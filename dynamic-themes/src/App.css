@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+* {
+  font-family: "Manrope";
+ /* background-color: black; */
+
+
+}
+
+  .wrapper {
+   
+  width: 450px;
+  height: auto;
+  display:flex;
+  justify-content:center;
+ background-color: #000000;
+} 
+
+.mobilePage {
+  max-width: 450px;
+  /* position:relative; */
+background-position:center;
+
+} 
+
 .upperPic {
-  background-image: url("https://neural.love/cdn/ai-photostock/1ed9da30-c5f3-6b2e-932f-5da3bae3454f/0.jpg?Expires=1685577599&Signature=bUrrQUpTfxCmDy9rxqlMHLRtis7jYcv7HuEaFk42o07kX-QSRJKZshcn6KDaKiYZTTTtfBhak1Wq9KVzPAn5~ZMkqnb0YcSblWmfjco60SIHkOzgQ2hyJ3c4A0GJQfo~XMiC5unkyk3Xi~TXVA9UZ5HFkJLMLAH2UtfZI1scoeeMK4ji9OAB9rz3R-mqvtu8aUhNIZ6OwwC-rYyIh1VLCRf93tSldXOElq9oJ4JNxgFpKvtche2QfTVNGMprYVVKOixRSeNt8hj76Cv08IyWbqpEs0fkUBm2U8NSTCPffvWkhwgQW0eRJNrXDkZ71sb8x3vnjsin7R7KwdkubudLDA__&Key-Pair-Id=K2RFTOXRBNSROX");
   background-repeat: no-repeat;
   width: 100%;
   height: 46%;
@@ -7,11 +30,13 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 0; 
+
+
+
 }
 
 .lowerPic {
-  background-image: url("https://garden.spoonflower.com/c/7813492/p/f/m/Tz39lpcSGoJZ6oFMPNmT1FzhqtZsMdKcU2wfw2ruC0AoUbo_miyxzmAw/CSMC28%20-%20Rustic%20Teal%20Green%20Pastel%20Sandstone%20Texture.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: 54%;
@@ -20,6 +45,8 @@
   align-items: center;
   position: absolute;
   bottom: 0;
+
+
 }
 
 .theme-options {
@@ -27,16 +54,35 @@
   margin: 0;
   text-align: right;
   width: 100%;
-  position: absolute;
   top: 0;
+  
 }
 
 .selectBox {
   height: 25px;
   width: 25px;
   cursor: pointer;
-  opacity: 0.8;
-  display: inline-block;
+  opacity: 0.3;
+  display: block;
+
+}
+
+.greyOrange {
+  background: rgb(136, 136, 136);
+}
+
+.greyOrange:hover {
+  opacity: 1;
+}
+
+.selectGreyOrange {
+  background: #4f4f4f;
+}
+
+.react-iconsselectGreyOrange {
+  color: rgba(255, 113, 34, 1);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .teal {
@@ -47,12 +93,14 @@
   opacity: 1;
 }
 
-.greyOrange {
-  background-color: rgb(102, 100, 108);
+.selectTeal {
+  background: rgba(122, 199, 207, 0.6);
 }
 
-.greyOrange:hover {
-  opacity: 1;
+.react-iconsselectTeal {
+  color: rgba(62, 151, 147, 1);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .yellow {
@@ -63,12 +111,32 @@
   opacity: 1;
 }
 
+.selectYellow {
+  background: rgba(248, 199, 70, 1);
+}
+
+.react-iconsselectYellow {
+  color: rgba(248, 199, 70, 1);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .red {
   background-color: rgb(215, 109, 92);
 }
 
 .red:hover {
   opacity: 1;
+}
+
+.selectRed {
+  background: rgba(255, 207, 183, 0.6);
+}
+
+.react-iconsselectRed {
+  color: rgba(221, 78, 40, 1);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .purple {
@@ -79,128 +147,152 @@
   opacity: 1;
 }
 
+.selectPurple {
+  background: rgba(189, 116, 208, 0.6);
+}
+
+.react-iconsselectPurple {
+  color: rgba(129, 16, 87, 1);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* GRIDS */
 .gridsContainer {
+  box-sizing: border-box;
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+/* First Row Container */
 .gridPersonalInfoContainer {
   text-align: center;
   letter-spacing: 0em;
   text-align: center;
-  margin: 15px;
-  background: rgba(110, 115, 123, 0.6);
-  color: white;
+  color: #ffffff;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 10px;
-   line-height: 1vw;
-  
- 
+  border-radius: 15px;
+  line-height: 0.4vw;
+  background: rgba(126, 39, 12, 0.4);
+  box-shadow: 3px 3px 25px rgba(35, 37, 37, 0.31);
+  backdrop-filter: blur(10px);
 }
 
-.gridPersonalInfoContainer p,h3,h6{
-  line-height: 10px;
+.gridPersonalInfoContainer h3 {
+  font-size: 30px;
 }
 
 .gridPersonalInfoContainer p {
   font-size: 10px;
-  line-height: 10px;
+  line-height: 12px;
 }
 
+/* Second Row Container */
 .gridShareContainer {
   display: table;
   text-align: center;
   letter-spacing: 0em;
-  margin: 15px;
-  background: rgba(110, 115, 123, 0.6);
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: white;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
-  
-
-}
-
-.vl {
-  border-left: 2px solid rgb(255, 255, 255);
-  height: 30px;
-  width:100%;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 .gridShareContainer h4 {
   display: inline-block;
 }
 
-.column{
+.column {
+  text-align: center;
   display: table-cell;
- padding-right: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Third Row Container */
 .gridContactContainer {
   text-align: center;
   letter-spacing: 0em;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: white;
   overflow-x: scroll;
   display: flex;
   flex-wrap: nowrap;
+}
+
+.gridContactContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .contactMethod {
   text-align: center;
-  display: inline-block;
   letter-spacing: 0em;
-  background: rgba(110, 115, 123, 0.6);
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  width: 20%;
+  border-radius: 15px;
+  width: 100%;
+  display: grid;
+}
 
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
 }
 
 .contactMethod h4 {
-  display: inline-block;
+  margin: 0;
+  padding-bottom: 55px;
+  padding-top: 15px;
 }
 
+/* Fourth Row Container */
 .gridAppContainer {
-  margin-left: 15px;
-  margin-right: 15px;
   color: white;
-  padding-top: 10px;
   overflow-x: scroll;
   display: flex;
   flex-wrap: nowrap;
 }
 
+.gridAppContainer::-webkit-scrollbar {
+  display: none;
+}
+
 .app {
   text-align: center;
-  background: rgba(110, 115, 123, 0.6);
   margin-left: 5px;
   margin-right: 5px;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 50px;
-  height: 10%;
-}
-
-.app h4 {
-  text-align: center;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 8px;
 }
 
 @media only screen and (min-width: 480px) {
