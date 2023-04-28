@@ -4,7 +4,7 @@ import {Contact} from "./Contact";
 import {Share} from "./Share"
 import{Applications} from "./Applications";
 
-type GridsProps = {
+interface GridsProps  {
   theme: string;
   
 };
@@ -12,7 +12,7 @@ type GridsProps = {
 export const GridsContainer = (props: GridsProps) => {
   return (
     <>
-      <div className={`gridsContainer ${props.theme}gridsContainer`}>
+      <div className={`gridsContainer ${props.theme}upperPic  ${props.theme}gridsContainer`}>
       <PersonalInfo theme={props.theme}/>
       <Share theme={props.theme}/>
       <Contact theme={props.theme}/>

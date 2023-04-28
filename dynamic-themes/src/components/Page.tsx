@@ -1,6 +1,7 @@
 import React from "react";
 import { GridsContainer } from "./GridsContainer";
 import { BackgroundPictures } from "./BackgroundPictures";
+import { Nav } from "./Nav";
 
 interface PageProps {
   colour: "GreyOrange" | "Purple" | "Red" | "Teal" | "Yellow";
@@ -11,9 +12,10 @@ export const Page = ({ colour }: PageProps) => {
     <>
       <div>
         <div className="wrapper">
-          <div className="mobilePage">
-            {/* <BackgroundPictures theme={`select${colour}`} />
-            <GridsContainer theme={`select${colour}`} /> */}
+         <Nav />
+          <div className={`mobilePage select${colour}lowerPic`}>
+            <BackgroundPictures theme={`select${colour}`} />
+            <GridsContainer theme={`select${colour}`} />
           </div>
         </div>
       </div>

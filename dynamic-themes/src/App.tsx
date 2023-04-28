@@ -2,9 +2,6 @@ import "./App.css";
 import {
   Routes,
   Route,
-
-  // useSearchParams,
-  // BrowserRouter
 } from "react-router-dom";
 import { Nav } from "./components/Nav";
 import { Page } from "./components/Page";
@@ -12,7 +9,7 @@ import { Page } from "./components/Page";
 const App = () => {
   return (
     <div className="App">
-      <Nav />
+ 
       <Routes>
         <Route path="/greyorangetheme" element={<Page colour="GreyOrange" />} />
         <Route path="/tealtheme" element={<Page colour="Teal" />} />

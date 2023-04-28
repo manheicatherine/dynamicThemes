@@ -1,53 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   font-family: "Manrope";
- /* background-color: black; */
-
 
 }
 
-  .wrapper {
-   
-  width: 450px;
-  height: auto;
-  display:flex;
-  justify-content:center;
- background-color: #000000;
-} 
-
-.mobilePage {
-  max-width: 450px;
-  /* position:relative; */
-background-position:center;
-
-} 
-
-.upperPic {
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 46%;
-  background-size: cover;
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0; 
-
-
-
 }
 
-.lowerPic {
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 54%;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-
-
-}
 
 .theme-options {
   padding: 0;
@@ -55,7 +19,6 @@ background-position:center;
   text-align: right;
   width: 100%;
   top: 0;
-  
 }
 
 .selectBox {
@@ -64,7 +27,6 @@ background-position:center;
   cursor: pointer;
   opacity: 0.3;
   display: block;
-
 }
 
 .greyOrange {
@@ -159,30 +121,43 @@ background-position:center;
 
 /* GRIDS */
 .gridsContainer {
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width:375px;
+  align-items: center;
+  /* padding-left:20px;
+  padding-right:20px; */
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+ background-size:contain;
+ 
+  /* box-sizing: border-box; */
+  /* position: absolute; */
+  /* bottom: 0;
   padding-bottom: 40px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
 }
 
 /* First Row Container */
 .gridPersonalInfoContainer {
+  
   text-align: center;
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 10px;
+ 
   padding-bottom: 10px;
   border-radius: 15px;
   line-height: 0.4vw;
   background: rgba(126, 39, 12, 0.4);
   box-shadow: 3px 3px 25px rgba(35, 37, 37, 0.31);
   backdrop-filter: blur(10px);
+  width:70%
 }
 
 .gridPersonalInfoContainer h3 {
@@ -200,7 +175,7 @@ background-position:center;
   text-align: center;
   letter-spacing: 0em;
   margin-top: 10px;
-  margin-bottom: 10px;
+  
   color: white;
   padding-left: 40px;
   padding-right: 40px;
@@ -210,10 +185,12 @@ background-position:center;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
 
 .gridShareContainer h4 {
   display: inline-block;
+  
 }
 
 .column {
@@ -235,6 +212,8 @@ background-position:center;
   overflow-x: scroll;
   display: flex;
   flex-wrap: nowrap;
+  width:90%;
+  
 }
 
 .gridContactContainer::-webkit-scrollbar {
@@ -274,6 +253,8 @@ background-position:center;
   overflow-x: scroll;
   display: flex;
   flex-wrap: nowrap;
+  width:85%;
+  margin-bottom:30px
 }
 
 .gridAppContainer::-webkit-scrollbar {
@@ -292,7 +273,8 @@ background-position:center;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 8px;
+  line-height: 1px;
+
 }
 
 @media only screen and (min-width: 480px) {

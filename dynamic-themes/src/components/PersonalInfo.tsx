@@ -1,4 +1,4 @@
-type PersonalInfoProps = {
+interface PersonalInfoProps  {
   theme: string;
 };
 

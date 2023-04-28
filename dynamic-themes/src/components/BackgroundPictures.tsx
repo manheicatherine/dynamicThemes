@@ -1,5 +1,5 @@
 import React from "react";
-type BackgroundPicturesProps = {
+interface BackgroundPicturesProps  {
   theme: string;
 };
 export const BackgroundPictures = (props: BackgroundPicturesProps) => {
@@ -7,13 +7,9 @@ export const BackgroundPictures = (props: BackgroundPicturesProps) => {
  
   return (
     <>
-      {/* <div className={`upperPic ${props.theme}upperPic`}>
-      </div>
-      <div className={`lowerPic ${props.theme}lowerPic`}></div> */}
-
-<div className = {`upperPic ${props.theme}upperPic `}>
-      <div className = {`lowerPic ${props.theme}lowerPic`}>
-
+    
+<div className = {` ${props.theme}upperPic `}>
+      <div className = {`mobilePage ${props.theme}lowerPic`}>
       </div>
       </div>
     </>
