@@ -11,6 +11,7 @@ const App = () => {
     <div className="App">
  
       <Routes>
+      <Route path="/*" element={<Page colour="GreyOrange" />} />
         <Route path="/greyorangetheme" element={<Page colour="GreyOrange" />} />
         <Route path="/tealtheme" element={<Page colour="Teal" />} />
         <Route path="/yellowtheme" element={<Page colour="Yellow" />} />
